@@ -1,0 +1,52 @@
+.card {
+  border-radius: 16px;
+  height: 60vh;
+  width: 20vw;
+  margin-right: 2vw;
+  background-color: var(--white);
+  box-shadow: 0px 0px 32px 0px #0000001A;
+  margin-bottom: 5vh;
+
+}
+.weekday {
+  background-color: white;
+  color: var(--blue-500);
+  text-transform: uppercase;
+  border-radius: 57px;
+  padding: 4px 16px;
+}
+
+.temperature {
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 10px;
+}
+.top {
+  border-radius: 16px 16px 0px 0px;
+  padding: 14px 24px;
+}
+.bottom {
+  padding: 4px 24px;
+}
+.sunny {
+  background-color: var(--blue-300);
+}
+.gloomy {
+  background-color: var(--blue-400);
+}
+.rainy {
+  background-color: var(--blue-600);
+}
+.windy {
+  background-color: var(--blue-100);
+}
+.top img, .bottom img{
+  max-width:100%;
+  height: auto;
+}
+@media screen and (max-width: 500px) {
+  .card {
+    width: 80vw;
+  }
+}

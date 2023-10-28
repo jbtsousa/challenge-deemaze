@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+/*SUbstitute for Helvetica*/
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+
+body{
+  margin:0px;
+  padding:0px;
+  color:#253050;
+  font-family: 'Arimo';
+}
+p {
+  font-size: 24px;
+}
+.big-title{
+  font-size: 64px;
+  font-family: 'Montserrat-ExtraBold';
+}
+.medium-title{
+  font-size: 32px;
+  font-family: 'Montserrat-Bold';
+}
+.small-title{
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Montserrat-Bold';
+}
+
+:root {
+  --off-white: #f7f7f7f7;
+  --white: #ffffff;
+  --grey: #c4c4c4;
+  --blue-100: #88b9e5;
+  --blue-200: #6e90e6;
+  --blue-300: #50b1d4;
+  --blue-400: #2864d2;
+  --blue-500: #253050;
+  --blue-600: #02085a;
+  --blue-700: #151b2d;
+}
+
+

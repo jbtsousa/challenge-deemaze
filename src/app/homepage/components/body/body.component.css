@@ -1,0 +1,68 @@
+#banner {
+  width: 100vw;
+}
+#banner img {
+  width: 100%;
+}
+#intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+#text {
+  width: 30vw;
+}
+#gradient {
+  background: -webkit-linear-gradient(#075fff, #50b1d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#image {
+  width: 40vw;
+}
+#title {
+  text-align: center;
+}
+#title h3{
+  margin: 0px 0px;
+}
+#title p{
+  font-size: 21px;
+}
+#location{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:5px
+}
+
+#final {
+  margin: 10vh 0;
+  text-align: center;
+}
+#carousel {
+  display: flex;
+  overflow-x: scroll;
+  margin: 10px 40px;
+}
+
+@media screen and (max-width: 500px) {
+  #intro {
+    flex-direction: column;
+  }
+  #text {
+    width: 80vw;
+  }
+  #image {
+    width: 80vw;
+  }
+  #carousel {
+    flex-direction: column;
+    align-items: center;
+  }
+  #final {
+    margin: 5vh 10vw;
+    text-align: center;
+  }
+}

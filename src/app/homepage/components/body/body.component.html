@@ -1,6 +1,46 @@
-<section id="banner"></section>
-<section id="intro"></section>
-<section id="weather">
-  <weather-card></weather-card>
-  >
-</section>
+<div id="banner">
+  <img src="assets/images/image-bg.png" alt="bg" />
+</div>
+<div id="intro">
+  <div id="text">
+    <h1 class="big-title">Let's pack!</h1>
+    <p>
+      Get ready for <span style="font-weight: bolder"> Disneyland</span> with
+      <span style="font-weight: bolder">American Tourist</span>! We've got all
+      the tips and you need to pack for the
+      <span id="gradient">adventure of a lifetime</span>!
+    </p>
+  </div>
+  <img id="image" src="assets/images/mickey.png" alt="mickey" />
+</div>
+<hr style="width: 80%" />
+
+<div id="weather">
+  <div id="title">
+    <div id="location">
+      <img src="assets/images/map-pin.svg" alt="map-pin" />
+      <p>Paris, France</p>
+    </div>
+    <h3 class="medium-title">Weather Forecast</h3>
+    <p>October 27 - November 2</p>
+  </div>
+
+  <div id="carousel">
+    <weather-card
+      *ngFor="let day of weatherMapped"
+      [day]="day.date"
+      [tempMax]="day.temp_max"
+      [tempMin]="day.temp_min"
+      [weatherCode]="day.code"
+    >
+    </weather-card>
+  </div>
+</div>
+
+<div id="final">
+  <h3 class="medium-title">Are you ready for the adventure?</h3>
+  <p>
+    We can´t wait to meet you and create wonderful memories together,full of joy
+    and laughter!
+  </p>
+</div>

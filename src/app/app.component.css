@@ -1,0 +1,18 @@
+
+body{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: var(--off-white);
+  color:var(--blue-500);
+}
+h1{
+  font-family: 'Montserrat-Extrabold';
+}
+h3{
+  font-family: 'Monteserrat-Bold';
+}
+body.dark{
+  background-color: var(--blue-700);
+  color:var(--off-white);
+
+}
+

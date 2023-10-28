@@ -1,0 +1,20 @@
+#footer {
+  margin: 5vh 0;
+  color: var(--grey);
+  font-size: 16px;
+  text-align: center;
+}
+
+#footer #caps {
+  text-transform: uppercase;
+}
+#brands {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 10vh;
+}
+#cross {
+  margin: 0 1vw;
+}

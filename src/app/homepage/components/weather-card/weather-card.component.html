@@ -1,0 +1,107 @@
+<div *ngIf="isSunny(weatherCode)" class="card">
+  <!-- Sunny Weather -->
+  <div class="top sunny">
+    <span class="weekday">{{ day | date : "EEEE" }}</span>
+    <div class="temperature">
+      <span class="big-title"
+        >{{ (tempMax + tempMin) / 2 | number : "1.0-0" }}º</span
+      >
+      <img id="image" src="assets/images/sunny.png" alt="sunny" />
+    </div>
+  </div>
+  <div class="bottom">
+    <h2 class="small-title">Sunny day</h2>
+    <div>
+      Expect clear skies and abundant sunshine for a delightful day ahead.
+    </div>
+    <h4>Our Suggestions</h4>
+    <img id="image" src="assets/images/sunny_pack.png" alt="sunny" />
+  </div>
+</div>
+
+<div *ngIf="isGloomy(weatherCode)" class="card">
+  <!-- Gloomy Weather -->
+  <div class="top gloomy">
+    <span class="weekday">{{ day | date : "EEEE" }}</span>
+    <div class="temperature">
+      <span class="big-title"
+        >{{ (tempMax + tempMin) / 2 | number : "1.0-0" }}º</span
+      >
+      <img id="image" src="assets/images/gloomy.png" alt="sunny" />
+    </div>
+  </div>
+  <div class="bottom">
+    <h2 class="small-title">Gloomy day</h2>
+    <div>
+      Anticipate a gloomy day with overcast skies and don't forget to bring your
+      umbrella.
+    </div>
+    <h4>Our Suggestions</h4>
+    <img id="image" src="assets/images/gloomy_pack.png" alt="sunny" />
+  </div>
+</div>
+
+<div *ngIf="isWindy(weatherCode)" class="card">
+  <!-- Windy Weather -->
+  <div class="top windy">
+    <span class="weekday">{{ day | date : "EEEE" }}</span>
+    <div class="temperature">
+      <span class="big-title"
+        >{{ (tempMax + tempMin) / 2 | number : "1.0-0" }}º</span
+      >
+      <img id="image" src="assets/images/windy.png" alt="sunny" />
+    </div>
+  </div>
+  <div class="bottom">
+    <h2 class="small-title">Windy day</h2>
+    <div>
+      Get ready for a breezy day with some cloudy skies. It's gonna be a little
+      windy out there!
+    </div>
+    <h4>Our Suggestions</h4>
+    <img id="image" src="assets/images/windy_pack.png" alt="sunny" />
+  </div>
+</div>
+
+<div *ngIf="isRainy(weatherCode)" class="card">
+  <!-- Rainy Weather -->
+  <div class="top rainy">
+    <span class="weekday">{{ day | date : "EEEE" }}</span>
+    <div class="temperature">
+      <span class="big-title"
+        >{{ (tempMax + tempMin) / 2 | number : "1.0-0" }}º</span
+      >
+      <img id="image" src="assets/images/rainy.png" alt="sunny" />
+    </div>
+  </div>
+  <div class="bottom">
+    <h2 class="small-title">Rainy day</h2>
+    <div>
+      Get ready for a rainy day. Don't forget your trusty umbrella - showers are
+      on the way!
+    </div>
+    <h4>Our Suggestions</h4>
+    <img id="image" src="assets/images/rainy_pack.png" alt="sunny" />
+  </div>
+</div>
+
+<div *ngIf="isSnowy(weatherCode)" class="card">
+  <!-- Snowy Weather -->
+  <div class="top snowy">
+    <span class="weekday">{{ day | date : "EEEE" }}</span>
+    <div class="temperature">
+      <span class="big-title"
+        >{{ (tempMax + tempMin) / 2 | number : "1.0-0" }}º</span
+      >
+      <img id="image" src="assets/images/snowy.png" alt="sunny" />
+    </div>
+  </div>
+  <div class="bottom">
+    <h2 class="small-title">Snowy day</h2>
+    <div>
+      Grab your warm coat and snow boots - a winter wonderland awaits!
+    </div>
+    <h4>Our Suggestions</h4>
+    <img id="image" src="assets/images/rainy_pack.png" alt="sunny" />
+  </div>
+</div>
